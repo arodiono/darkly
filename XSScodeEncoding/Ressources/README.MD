@@ -4,7 +4,7 @@
 
 We may encode our script in base64 and place it in META tag. This way we get rid of alert() totally. More information about this method can be found in RFC 2397
 
-## Exploit
+### Exploit
 
 Encode `<script>alert('xss')</script>` to base64 `PHNjcmlwdD5hbGVydCgneHNzJyk8L3NjcmlwdD4=`
 

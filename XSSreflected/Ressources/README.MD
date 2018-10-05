@@ -2,7 +2,7 @@
 
 [https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
 
-## Exploit
+### Exploit
 
 Go to `<server>/index.php?page=recover` and open inspector. Find hidden input with name="mail" and change value to your email. Then submit form
 
