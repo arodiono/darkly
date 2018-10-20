@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -f $1 ]; then
-	echo "Enter the IP of your VM"
+	echo "Enter the VM IP: "
 	echo "./`basename $0` <ip>"
 else
 	touch /tmp/hack.dont.upload.me

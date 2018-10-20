@@ -1,10 +1,13 @@
 import scrapy
 import requests
 
+ip = input("Enter VM IP: ")
+print("Starting searching flag @ " + ip)
+
 class DarklySpider(scrapy.Spider):
     name = 'darkly'
-    start_urls = ['http://192.168.56.101/.hidden/']
-    allowed_domains = ['192.168.56.101']
+    start_urls = ['http://' + ip + '/.hidden/']
+    allowed_domains = [ip]
 
     def parse(self, response):
         for link in response.css('a'):
