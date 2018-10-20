@@ -12,3 +12,6 @@ class DarklySpider(scrapy.Spider):
                 self.logger.warning(requests.get(response.url + "README").text)
         for next_page in response.css('a'):
             yield response.follow(next_page, self.parse)
+     
+    def start_requests(self):
+        ip = raw_input("Enter VM IP: ")
